@@ -23,6 +23,10 @@ img{
     max-width: 1180px;
     margin: 0 auto;
 }
+.internal_container{
+    max-width: 1060px;
+    margin: 0 auto;
+}
 .d_flex{
     display: flex;
 }
@@ -58,6 +62,7 @@ img{
     display: inline-block;
     padding: 10px 33px;
     border-radius: 40px;
+    cursor: pointer;
 }
 
 
@@ -89,6 +94,7 @@ nav {
     outline: 0;
     display: inline-block;
     margin-left: 10px;
+    cursor: pointer;
 }
 .nav_btn button i{
     font-size: 1.2rem;
@@ -132,6 +138,16 @@ nav {
 .hero_right .hero_img img{}
 
 
+/* Sponser Section Style  */
+.sponser_section{
+    margin: 100px 0px;
+}
+.sponser_logo {
+    flex-wrap: wrap;
+    padding: 20px;
+    border-top: 1px solid #8080802b;
+    border-bottom: 1px solid #8080802b;
+}
 
 /* Responsive Style  */
 @media screen and (max-width:1180px) {
@@ -163,6 +179,18 @@ nav {
     .hero_content p{
         width: 100%;
     }
+
+
+    /* sponser section  */
+    .internal_container{
+        width: 100%;
+    }
+    .sponser_logo{
+        row-gap: 20px;
+    }
+    .sponser_img {
+        flex-basis: 25%;
+    }
 }
 @media screen and (min-width:576px) and (max-width:768px) {
     nav{
@@ -180,6 +208,16 @@ nav {
     }
     .hero_left{
         flex-basis: 100%;
+    }
+
+
+    /* sponser section  */
+    
+    .sponser_logo{
+        row-gap: 20px;
+    }
+    .sponser_img {
+        flex-basis: 20%;
     }
 }
 

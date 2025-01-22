@@ -19,6 +19,10 @@ img{
 }
 
 /* Shared Style  */
+.fixed_container{
+    max-width: 1180px;
+    margin: 0 auto;
+}
 .d_flex{
     display: flex;
 }
@@ -46,3 +50,83 @@ img{
 .btn_bg{
     background-color: rgba(224, 44, 109, 1);
 }
+
+.primary_btn {
+    color: white;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 33px;
+    border-radius: 40px;
+}
+
+
+
+
+
+/* Header Style  */
+header{}
+nav {
+    padding: 20px 0px;
+}
+.nav_brands{}
+.nav_brands h2{
+    font-size: 1.5rem;
+}
+.nav_menu{}
+.nav_menu ul{}
+.nav_menu ul li{}
+.nav_menu ul li a {
+    color: rgba(58, 58, 58, 1);
+    font-size: 1rem;
+    padding: 0px 10px;
+    margin-left: 5px;
+}
+.nav_btn{}
+.nav_btn button {
+    background: none;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    margin-left: 10px;
+}
+.nav_btn button i{
+    font-size: 1.2rem;
+}
+
+
+/* Hero Section Style  */
+.hero_section {
+    padding-top: 30px;
+}
+.hero_left {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero_content{}
+.hero_content h1{
+    font-size: 3.25rem;
+    font-weight: bold;
+}
+.hero_content p {
+    font-size: 1rem;
+    width: 90%;
+    margin: 16px 0px;
+}
+.hero_content button{}
+.hero_content button span {
+    display: inline-block;
+    margin-left: 5px;
+}
+.hero_content button span i{}
+.hero_right{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.hero_right .hero_img{
+}
+.hero_right .hero_img img{}

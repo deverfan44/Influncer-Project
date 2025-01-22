@@ -70,24 +70,18 @@ img{
 
 
 /* Header Style  */
-header{}
 nav {
     padding: 20px 0px;
 }
-.nav_brands{}
 .nav_brands h2{
     font-size: 1.5rem;
 }
-.nav_menu{}
-.nav_menu ul{}
-.nav_menu ul li{}
 .nav_menu ul li a {
     color: rgba(58, 58, 58, 1);
     font-size: 1rem;
     padding: 0px 10px;
     margin-left: 5px;
 }
-.nav_btn{}
 .nav_btn button {
     background: none;
     border: none;
@@ -111,7 +105,6 @@ nav {
     flex-direction: column;
     justify-content: center;
 }
-.hero_content{}
 .hero_content h1{
     font-size: 3.25rem;
     font-weight: bold;
@@ -121,21 +114,16 @@ nav {
     width: 90%;
     margin: 16px 0px;
 }
-.hero_content button{}
 .hero_content button span {
     display: inline-block;
     margin-left: 5px;
 }
-.hero_content button span i{}
 .hero_right{
     flex-basis: 50%;
     display: flex;
     justify-content: end;
     align-items: center;
 }
-.hero_right .hero_img{
-}
-.hero_right .hero_img img{}
 
 
 /* Sponser Section Style  */

@@ -141,6 +141,65 @@ nav {
     border-bottom: 1px solid #8080802b;
 }
 
+/* Collection Section Style  */
+.collection_section{
+    margin-bottom: 100px;
+}
+.collection_title {
+    margin-bottom: 30px;
+}
+.collection_title h1{
+    font-weight: 600;
+}
+.collection_box {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 31px;
+}
+.collection_item {
+    /* border: 1px solid black; */
+    padding: 15px 20px;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+.collect_img {
+    text-align: center;
+}
+.collect_img img{}
+.collect_des {
+    margin-top: 1rem;
+}
+.collect_des h2{
+    color: rgba(24, 25, 31, 1);
+    font-size: 1.75rem;
+}
+.collect_des h3 {
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 1.5rem;
+    margin: 8px 0px;
+}
+.collect_rating{
+    align-items: center;
+}
+.collect_rating i{
+    color: orange;
+    font-size: 0.6rem;
+    margin-right: 2px;
+}
+.collect_rating span{
+    color: rgba(94, 99, 102, 1);
+}
+.collect_des p {
+    color: rgba(120, 120, 133, 1);
+    font-weight: 600;
+    font-size: 1rem;
+    width: 75%;
+}
+.collect_des .p_1 {
+    margin-top: 6px;
+}
+.collect_des .p_2{}
+
 /* Responsive Style  */
 @media screen and (max-width:1180px) {
     .fixed_container{
@@ -159,6 +218,10 @@ nav {
     }
 }
 @media screen and (max-width:576px) {
+    .internal_container{
+        width: 90%;
+        margin: 0 auto;
+    }
     .hero_section{
         flex-direction: column-reverse;
     }
@@ -193,6 +256,17 @@ nav {
         flex-basis: 25%;
     }
     
+    /* Collection Style  */
+    .collection_box {
+        grid-template-columns: 80%;
+        justify-content: center;
+    }
+    .collect_img img {
+        width: 100%;
+    }
+    .collect_des p {
+        width: 100%;
+    }
 }
 @media screen and (min-width: 440px) and (max-width:576px) {
     nav{
@@ -209,6 +283,10 @@ nav {
 }
 
 @media screen and (min-width:576px) and (max-width:992px) {
+    .internal_container{
+        width: 90%;
+        margin: auto;
+    }
     .hero_section{
         flex-direction: column-reverse;
     }
@@ -222,12 +300,21 @@ nav {
 
 
     /* sponser section  */
-    
     .sponser_logo{
         row-gap: 20px;
     }
     .sponser_img {
         flex-basis: 20%;
+    }
+    /* Collection Style  */
+    .collection_box {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .collect_img img {
+        width: 100%;
+    }
+    .collect_des p {
+        width: 100%;
     }
 }
 

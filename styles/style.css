@@ -165,7 +165,6 @@ nav {
 .collect_img {
     text-align: center;
 }
-.collect_img img{}
 .collect_des {
     margin-top: 1rem;
 }
@@ -198,7 +197,34 @@ nav {
 .collect_des .p_1 {
     margin-top: 6px;
 }
-.collect_des .p_2{}
+
+
+/* Product section style  */
+.product_section{
+    margin-bottom: 100px;
+}
+.product_content{}
+.product_img {}
+.product_img img{}
+.product_img img{}
+.product_info{
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+}
+.product_info h1{
+    color: rgba(10, 8, 38, 1);
+    font-weight: bold;
+    font-size: 2.34rem;
+}
+.product_info p{
+    font-weight: bold;
+    margin: 15px 0px 10px;
+    width: 70%;
+}
+.product_info button {
+    border-radius: 0px;
+}
 
 /* Responsive Style  */
 @media screen and (max-width:1180px) {
@@ -267,6 +293,29 @@ nav {
     .collect_des p {
         width: 100%;
     }
+
+
+    /* product style  */
+    .product_content{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .product_info{
+        text-align: center;
+        padding-left: 0px;
+    }
+    .product_img img{
+        width: 100%;
+    }
+    .product_info p{
+        width: 100%;
+    }
+    .product_info h1{
+        font-size: 1.2rem;
+    }
+    .product_info p{
+        width: 100%;
+    }
 }
 @media screen and (min-width: 440px) and (max-width:576px) {
     nav{
@@ -280,8 +329,29 @@ nav {
         flex-direction: column;
         row-gap: 20px;
     }
+    .product_content{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .product_info{
+        text-align: center;
+        padding-left: 0px;
+    }
+    .product_info p{
+        width: 100%;
+    }
 }
-
+@media screen and (min-width:768px) and (max-width:992px) {
+    .product_info{
+        padding-left: 20px;
+    }
+    .product_info h1{
+        font-size: 1.5rem;
+    }
+    .product_info p{
+        width: 100%;
+    }
+}
 @media screen and (min-width:576px) and (max-width:992px) {
     .internal_container{
         width: 90%;
@@ -297,8 +367,6 @@ nav {
     .hero_left{
         flex-basis: 100%;
     }
-
-
     /* sponser section  */
     .sponser_logo{
         row-gap: 20px;
